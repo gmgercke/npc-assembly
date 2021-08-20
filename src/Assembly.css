@@ -1,7 +1,26 @@
 .keyword-highlight {
   line-height: 2;
   padding: 3px;
-  border: 1px solid black;
+  border: 1px solid rgb(163, 145, 172);
   border-radius: 10px;
   margin-right: 5px;
+}
+
+.text-highlight {
+  color: rgb(114, 82, 155);
+}
+
+.generate-button {
+  border: 1px solid rgb(163, 145, 172);
+  background-color: rgb(40, 36, 43);
+  border-radius: 10px;
+  color: rgb(163, 145, 172);
+  margin-bottom: 30px;
+  transition: all 200ms ease-in-out;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.596);
+}
+
+.generate-button:hover {
+  background-color: rgb(163, 145, 172);
+  color: rgb(40, 36, 43);
 }
