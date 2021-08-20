@@ -12,7 +12,8 @@ export default function Assembly() {
       active: true,
       mood: prompts[0][Math.floor(Math.random() * prompts[0].length)],
       race: prompts[1][Math.floor(Math.random() * prompts[1].length)],
-      wares: prompts[2][Math.floor(Math.random() * prompts[2].length)],
+      adjective: prompts[2][Math.floor(Math.random() * prompts[2].length)],
+      wares: prompts[3][Math.floor(Math.random() * prompts[3].length)],
     });
   }
 
@@ -22,12 +23,15 @@ export default function Assembly() {
         <button onClick={generatePrompts}>Hit it!</button>
         <div>
           Your NPC is a:
-          <br />
-          <span>{keyword.mood}</span>
-          <br />
-          <span>{keyword.race}</span> who sells
-          <br />
-          <span>{keyword.wares}</span>
+          <div>
+            <span className="keyword-highlight">{keyword.mood}</span>
+            <span className="keyword-highlight">{keyword.race}</span>
+          </div>
+          who provides
+          <div>
+            <span className="keyword-highlight">{keyword.adjective}</span>
+            <span className="keyword-highlight">{keyword.wares}</span>
+          </div>
         </div>
       </div>
     );
