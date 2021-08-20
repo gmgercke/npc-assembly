@@ -43,7 +43,7 @@ export default function Assembly() {
     return (
       <div className="Assembly">
         <button className="generate-button" onClick={generatePrompts}>
-          Hit it!
+          Generate
         </button>
       </div>
     );
