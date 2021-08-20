@@ -1,13 +1,16 @@
 .keyword-highlight {
   line-height: 2;
-  padding: 3px;
+  padding: 5px;
   border: 1px solid rgb(163, 145, 172);
   border-radius: 10px;
-  margin-right: 5px;
+  margin-right: 10px;
+  box-shadow: 4px 4px 0px rgba(95, 95, 95, 0.5);
 }
 
 .text-highlight {
   color: rgb(114, 82, 155);
+  font-weight: bold;
+  line-height: 2;
 }
 
 .generate-button {
@@ -16,8 +19,8 @@
   border-radius: 10px;
   color: rgb(163, 145, 172);
   margin-bottom: 30px;
-  transition: all 200ms ease-in-out;
-  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.596);
+  transition: all 250ms ease-in-out;
+  box-shadow: 4px 4px 0px rgba(95, 95, 95, 0.5);
 }
 
 .generate-button:hover {

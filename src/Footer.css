@@ -1,0 +1,28 @@
+footer {
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  background-color: rgb(163, 145, 172);
+  color: rgb(40, 36, 43);
+  font-size: 12px;
+}
+
+.support {
+  margin-left: 20px;
+}
+
+img {
+  max-width: 25px;
+}
+
+a {
+  color: rgb(114, 82, 155);
+}
+
+a:hover {
+  color: rgb(114, 82, 155);
+  text-decoration: none;
+}
