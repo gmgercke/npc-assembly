@@ -3,8 +3,8 @@ body {
   font-family: "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(40, 36, 43);
-  color: rgb(163, 145, 172);
+  background-color: #10002bf3;
+  color: #e0aaffd2;
 }
 
 code {

@@ -5,8 +5,8 @@ footer {
   bottom: 0;
   width: 100%;
   justify-content: center;
-  background-color: rgb(163, 145, 172);
-  color: rgb(40, 36, 43);
+  background-color: #7a2cbfab;
+  color: #e0aaffd2;
   font-size: 12px;
 }
 
@@ -19,10 +19,10 @@ img {
 }
 
 a {
-  color: rgb(114, 82, 155);
+  color: #e0aaff;
 }
 
 a:hover {
-  color: rgb(114, 82, 155);
+  color: #e0aaff;
   text-decoration: none;
 }

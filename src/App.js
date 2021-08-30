@@ -1,12 +1,12 @@
 import "./App.css";
-import Assembly from "./Assembly";
+import ChoiceCheck from "./ChoiceCheck";
 import Footer from "./Footer";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>NPC Assembly v0.2</h1>
-      <Assembly />
+      <h1>NPC Assembly v0.3</h1>
+      <ChoiceCheck />
       <Footer />
     </div>
   );

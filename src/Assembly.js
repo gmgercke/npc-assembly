@@ -1,21 +1,36 @@
 import React, { useState } from "react";
 import "./Assembly.css";
-import { prompts } from "./Resources";
+import { promptsCat, promptsWar } from "./Resources";
+import PromptDisplay from "./PromptDisplay";
 
-export default function Assembly() {
+export default function Assembly(props) {
   const [ready, setReady] = useState(false);
-  const [keyword, setKeyword] = useState({ active: false });
+  const [keywordCat, setKeywordCat] = useState([]);
+  const [keywordWar, setKeywordWar] = useState([]);
 
   function generatePrompts() {
+    const newKeywordCat = [];
+    for (let i = 0; i < props.statusCat.length; i++) {
+      if (props.statusCat[i] === true) {
+        newKeywordCat.push([
+          promptsCat[i][Math.floor(Math.random() * promptsCat[i].length)],
+        ]);
+      }
+    }
+
+    setKeywordCat(newKeywordCat);
+
+    const newKeywordWar = [];
+    for (let i = 0; i < props.statusWar.length; i++) {
+      if (props.statusWar[i] === true) {
+        newKeywordWar.push([
+          promptsWar[i][Math.floor(Math.random() * promptsWar[i].length)],
+        ]);
+      }
+    }
+
+    setKeywordWar(newKeywordWar);
     setReady(true);
-    setKeyword({
-      active: true,
-      build: prompts[0][Math.floor(Math.random() * prompts[0].length)],
-      mood: prompts[1][Math.floor(Math.random() * prompts[1].length)],
-      race: prompts[2][Math.floor(Math.random() * prompts[2].length)],
-      adjective: prompts[3][Math.floor(Math.random() * prompts[3].length)],
-      wares: prompts[4][Math.floor(Math.random() * prompts[4].length)],
-    });
   }
 
   if (ready) {
@@ -24,19 +39,7 @@ export default function Assembly() {
         <button className="generate-button" onClick={generatePrompts}>
           Generate
         </button>
-        <div>
-          <span className="text-highlight">Your NPC is a</span>
-          <div>
-            <span className="keyword-highlight">{keyword.build}</span>
-            <span className="keyword-highlight">{keyword.mood}</span>
-            <span className="keyword-highlight">{keyword.race}</span>
-          </div>
-          <span className="text-highlight">who provides</span>
-          <div>
-            <span className="keyword-highlight">{keyword.adjective}</span>
-            <span className="keyword-highlight">{keyword.wares}</span>
-          </div>
-        </div>
+        <PromptDisplay keywordsCat={keywordCat} keywordsWar={keywordWar} />
       </div>
     );
   } else {

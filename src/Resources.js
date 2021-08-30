@@ -1,4 +1,8 @@
-export const prompts = [
+export const categories = ["Build", "Mood", "Race"];
+
+export const wares = ["Item Condition", "Goods and Services"];
+
+export const promptsCat = [
   [
     "averagely built",
     "short",
@@ -156,6 +160,7 @@ export const prompts = [
     "boring",
     "frightening",
     "spooky",
+    "sneering",
   ],
   [
     "Human",
@@ -227,6 +232,9 @@ export const prompts = [
     "Beholder",
     "Plantkin",
   ],
+];
+
+export const promptsWar = [
   [
     "slimy",
     "spooky",
@@ -261,6 +269,10 @@ export const prompts = [
     "adequately priced",
     "dangerous",
     "award winning",
+    "oversized",
+    "impressive",
+    "disappointing",
+    "miniature",
   ],
   [
     "food",
@@ -329,5 +341,7 @@ export const prompts = [
     "toys",
     "lights and lamps",
     "perfumes",
+    "brooms",
+    "furniture",
   ],
 ];

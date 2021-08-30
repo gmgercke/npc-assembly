@@ -1,29 +1,35 @@
+.keyword-highlight-null {
+  border: none;
+}
+
 .keyword-highlight {
   line-height: 2;
   padding: 5px;
-  border: 1px solid rgb(163, 145, 172);
+  border: 1px solid #e0aaff8a;
   border-radius: 10px;
   margin-right: 10px;
-  box-shadow: 4px 4px 0px rgba(95, 95, 95, 0.5);
+  box-shadow: 4px 4px 0px rgb(0, 0, 0);
 }
 
 .text-highlight {
-  color: rgb(114, 82, 155);
+  color: #e0aaffb9;
+  padding: 5px;
   font-weight: bold;
-  line-height: 2;
+  text-shadow: 2px 2px 0px rgb(0, 0, 0);
 }
 
 .generate-button {
-  border: 1px solid rgb(163, 145, 172);
-  background-color: rgb(40, 36, 43);
+  border: 1px solid #e0aaff8a;
+  background-color: #59189aa6;
   border-radius: 10px;
-  color: rgb(163, 145, 172);
+  color: #e0aaffd2;
   margin-bottom: 30px;
+  margin-top: 15px;
   transition: all 250ms ease-in-out;
-  box-shadow: 4px 4px 0px rgba(95, 95, 95, 0.5);
+  box-shadow: 4px 4px 0px rgb(0, 0, 0);
 }
 
 .generate-button:hover {
-  background-color: rgb(163, 145, 172);
-  color: rgb(40, 36, 43);
+  background-color: #10002ba2;
+  color: #e0aaffd2;
 }
