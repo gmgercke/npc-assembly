@@ -14,7 +14,6 @@ const ToggleContainer = styled.button`
 `;
 
 const Toggle = ({ theme, toggleTheme }) => {
-  const isLight = theme === "light";
   return <ToggleContainer onClick={toggleTheme}>Theme</ToggleContainer>;
 };
 

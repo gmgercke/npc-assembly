@@ -9,7 +9,6 @@ import { GlobalStyles } from "./GlobalThemes";
 
 export default function Footer() {
   const [theme, toggleTheme] = DarkMode();
-  const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
