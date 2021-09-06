@@ -3,33 +3,23 @@
 }
 
 .keyword-highlight {
+  color: #d1cce0;
   line-height: 2;
   padding: 5px;
-  border: 1px solid #e0aaff8a;
   border-radius: 10px;
   margin-right: 10px;
-  box-shadow: 4px 4px 0px rgb(0, 0, 0);
 }
 
 .text-highlight {
-  color: #e0aaffb9;
   padding: 5px;
   font-weight: bold;
-  text-shadow: 2px 2px 0px rgb(0, 0, 0);
 }
 
 .generate-button {
-  border: 1px solid #e0aaff8a;
-  background-color: #59189aa6;
+  padding: 1px 3px 3px 3px;
+  color: #f4f2f7;
   border-radius: 10px;
-  color: #e0aaffd2;
   margin-bottom: 30px;
   margin-top: 15px;
   transition: all 250ms ease-in-out;
-  box-shadow: 4px 4px 0px rgb(0, 0, 0);
-}
-
-.generate-button:hover {
-  background-color: #10002ba2;
-  color: #e0aaffd2;
 }

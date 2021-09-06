@@ -1,12 +1,12 @@
-footer {
+.footer {
   padding: 10px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   justify-content: center;
-  background-color: #7a2cbfab;
-  color: #e0aaffd2;
+  background-color: #512c78;
+  color: #bbafdd;
   font-size: 12px;
 }
 
@@ -19,10 +19,10 @@ img {
 }
 
 a {
-  color: #e0aaff;
+  color: #f4f2f7;
 }
 
 a:hover {
-  color: #e0aaff;
+  color: #bbafdd;
   text-decoration: none;
 }

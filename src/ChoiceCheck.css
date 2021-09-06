@@ -9,8 +9,6 @@ ul {
 
 .form-check-label {
   padding-left: 2px;
-  color: #e0aaffa8;
-  text-shadow: 1px 1px 0px rgb(0, 0, 0);
 }
 
 .form-check-input {
@@ -18,21 +16,14 @@ ul {
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background-color: #10002bf3;
-  border: 1px solid #e0aaff8a;
   transition: 0.2s all linear;
   margin-right: 5px;
-  box-shadow: 3px 3px 0px rgb(0, 0, 0);
 }
 
 .form-check-input:checked {
   appearance: none;
-  border: 1px solid #e0aaff8a;
-  background-color: #7a2cbfab;
-  box-shadow: 3px 3px 0px rgb(0, 0, 0);
 }
 
 .form-check-input:focus {
-  border: 1px solid #e0aaff8a;
-  box-shadow: 3px 3px 0px rgb(0, 0, 0);
+  box-shadow: none;
 }
