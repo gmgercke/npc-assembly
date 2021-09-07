@@ -51,7 +51,8 @@ export default function ChoiceCheck() {
             </li>
           </ul>
         );
-      })}
+      })}{" "}
+      <br />
       {wares.map(function (label, index) {
         return (
           <ul key={index}>
